@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #exam-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .options {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .option {
+            margin: 0 10px;
+        }
+
+        #submit-btn {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="exam-container">
+        <h2>Online Exam</h2>
+
+        <div class="question">
+            <p>1. What is the capital of France?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q1" value="paris"> Paris</label>
+                <label class="option"><input type="radio" name="q1" value="berlin"> Berlin</label>
+                <label class="option"><input type="radio" name="q1" value="london"> London</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. What is the largest planet in our solar system?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q2" value="mercury"> Mercury</label>
+                <label class="option"><input type="radio" name="q2" value="venus"> Venus</label>
+                <label class="option"><input type="radio" name="q2" value="jupiter"> Jupiter</label>
+            </div>
+        </div>
+
+        <button id="submit-btn" onclick="submitExam()">Submit Exam</button>
+    </div>
+
+    <script>
+        function submitExam() {
+            // You can add logic here to calculate the score and perform other actions
+            alert("Exam submitted!");
+        }
+    </script>
+</body>
+</html>

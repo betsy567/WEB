@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>chnage bg</title>
+    </head>
+    <body>
+    <h1><center><i>Welcome</i></center></h1>
+        <button style="display: block;margin-left:auto;"onclick="myfun()"><i>change bgcolor</i></button>
+        <script>
+            function nyfun(){
+                var randomcolor= '#'+ Math.floor(Math.random()*16777215).toString(16);
+                document.body.style.backgroundColor=randomColor;
+            }
+        </script>
+    </body>
+</html>

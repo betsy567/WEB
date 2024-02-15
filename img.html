@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Hover Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #hover-content {
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 20px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="hover-content" onmouseover="changeContent()" onmouseout="resetContent()">
+        <h2>Hover Over Me!</h2>
+        <p>Mouse over this content to see a new image and text.</p>
+    </div>
+
+    <div id="new-content" style="display: none;">
+        <img src="https://placekitten.com/200/200" alt="New Image">
+        <p>This is the new content!</p>
+    </div>
+
+    <script>
+        function changeContent() {
+            document.getElementById('hover-content').style.display = 'none';
+            document.getElementById('new-content').style.display = 'block';
+        }
+
+        function resetContent() {
+            document.getElementById('hover-content').style.display = 'block';
+            document.getElementById('new-content').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

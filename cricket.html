@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Cricket Players</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Indian Cricket Players</h2>
+
+    <?php
+    // Array of Indian cricket players
+    $cricketPlayers = array(
+        "Virat Kohli",
+        "Rohit Sharma",
+        "Jasprit Bumrah",
+        "Ravindra Jadeja",
+        "Shikhar Dhawan",
+        "KL Rahul",
+        "Hardik Pandya",
+        "Mohammed Shami",
+        "Cheteshwar Pujara",
+        "Ajinkya Rahane"
+    );
+    ?>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            // Display players in the table
+            foreach ($cricketPlayers as $index => $player) {
+                echo "<tr>";
+                echo "<td>" .($index + 1) . "</td>";
+                echo "<td>$player</td>";
+                echo "</tr>";
+            }
+            ?>
+        </tbody>
+    </table>
+</body>
+</html>

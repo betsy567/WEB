@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>functions</title>
+    </head>
+    <body>
+        <center>
+            <table>
+                <tr><td>Enter name:</td>
+                <td><input type="text"id="urname"></td></tr>
+                <tr><td>Length :</td>
+                <td><input type="text"id="name"><button onclick="len()">Length</button></td></tr>
+                <tr><td>Uppercase form:</td>
+                <td><input type="text"id="uname"><button onclick="upper()">Uppercase</button></td></tr>
+                <tr><td>Lowercase form:</td>
+                 <td><input type="text"id="lname"><button onclick="lower()">Lowercase</button></td></tr>
+                
+            </table>
+        </center>
+        <script>
+            function len(){
+                var x=document.getElementById("urname").value;
+                document.getElementById("name").value=x.length;
+            }
+            function upper(){
+                var x=document.getElementById("urname").value;
+                document.getElementById("uname").value=x.toUpperCase();
+            }
+            function lower(){
+                var x=document.getElementById("urname").value;
+                document.getElementById("lname").value=x.toLowerCase();
+            }
+        </script>
+    </body>
+</html>

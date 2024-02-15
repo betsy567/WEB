@@ -1,0 +1,15 @@
+.para{
+    color: white;
+    padding: 35px;
+    width: 250px;
+    height: 500px;
+}
+.right{
+
+    background-color: aqua;
+    color: azure;
+    padding: 20px;
+}
+body{
+    background-color: aquamarine;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>concatenate</title>
+    </head>
+    <body>
+        <center>
+            <table>
+                <tr><td>Enter first name:</td>
+                <td><input type="text"id="fname"></td></tr>
+                <tr><td>Enter last name:</td>
+                    <td><input type="text"id="lname"><button onclick="con()">Concatenate</button></td></tr>
+                    <tr><td>Name:</td>
+                        <td><input type="text"id="name"></td></tr>
+            </table>
+        </center>
+        <script>
+            function con(){
+                var x=document.getElementById("fname").value;
+                var y=document.getElementById("lname").value;
+                document.getElementById("name").value=x.concat(y);
+
+            }
+        </script>
+    </body>
+</html>
